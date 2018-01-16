@@ -1,5 +1,5 @@
 PODS:
-  - MCFoundation (0.1.0)
+  - MCFoundation (0.1.1)
 
 DEPENDENCIES:
   - MCFoundation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MCFoundation: 95af3a803ac780920252c0bbe764a506d2ac7db2
+  MCFoundation: 02664b6988d6bcf95b62a25a65d087c47153e931
 
 PODFILE CHECKSUM: 63b03b56cd3d863ff3a6f4c43838aa51dd5bd3ac
 
