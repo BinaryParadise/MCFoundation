@@ -6,6 +6,18 @@
 //  Copyright © 2017年 MC-Studio. All rights reserved.
 //
 
+#define keypath(...) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-repeated-use-of-weak\"") \
+macro_if_eq(1, macro_argcount(__VA_ARGS__))((keypath1(__VA_ARGS__)))((keypath2(__VA_ARGS__))) \
+_Pragma("clang diagnostic pop") \
+
+#define keypath1(PATH) \
+((void)(NO && ((void)PATH, NO)), strchr(# PATH, '.') + 1)
+
+#define keypath2(OBJ, PATH) \
+((void)(NO && ((void)OBJ.PATH, NO)), # PATH)
+
 /**
  * If A is equal to B, the next argument list is expanded; otherwise, the
  * argument list after that is expanded. A and B must be numbers between one
@@ -22,11 +34,20 @@
  * metaprogramming.
  */
 #define macro_at(N, ...) macro_concat(macro_at, N)(__VA_ARGS__)
+
 #define macro_head(FIRST, ...) FIRST
+
 #define macro_if_eq(A, B) macro_concat(macro_if_eq, A)(B)
+
+#define macro_argcount(...) \
+macro_at(9, __VA_ARGS__, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
 #define macro_concat(A, B) A ## B
+
 #define macro_dec(VAL) macro_at(VAL, m1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
 #define macro_consume(...)
+
 #define macro_expand(...) __VA_ARGS__
 
 #define macro_if_eq0_m1(...) macro_expand
