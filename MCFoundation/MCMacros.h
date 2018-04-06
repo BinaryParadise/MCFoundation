@@ -39,6 +39,10 @@ _Pragma("clang diagnostic pop") \
 
 #define macro_if_eq(A, B) macro_concat(macro_if_eq, A)(B)
 
+//A、B:[0~9]
+#define macro_less_eq(A, B)     macro_concat(macro_less_eq, A)(B)
+#define macro_greater_eq(A, B)  macro_concat(_macro_greater_eq, A)(B)
+
 #define macro_argcount(...) \
 macro_at(9, __VA_ARGS__, 9, 8, 7, 6, 5, 4, 3, 2, 1)
 
@@ -72,6 +76,52 @@ macro_at(9, __VA_ARGS__, 9, 8, 7, 6, 5, 4, 3, 2, 1)
 #define macro_if_eq7(VALUE) macro_if_eq6(macro_dec(VALUE))
 #define macro_if_eq8(VALUE) macro_if_eq7(macro_dec(VALUE))
 #define macro_if_eq9(VALUE) macro_if_eq8(macro_dec(VALUE))
+
+#define _macro_less_eq0_m1(...) macro_expand
+#define _macro_less_eq0_0(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_1(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_2(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_3(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_4(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_5(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_6(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_7(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_8(...) __VA_ARGS__ macro_consume
+#define _macro_less_eq0_9(...) __VA_ARGS__ macro_consume
+
+#define macro_less_eq0(VALUE) macro_concat(_macro_less_eq0_, VALUE)
+#define macro_less_eq1(VALUE) macro_less_eq0(macro_dec(VALUE))
+#define macro_less_eq2(VALUE) macro_less_eq1(macro_dec(VALUE))
+#define macro_less_eq3(VALUE) macro_less_eq2(macro_dec(VALUE))
+#define macro_less_eq4(VALUE) macro_less_eq3(macro_dec(VALUE))
+#define macro_less_eq5(VALUE) macro_less_eq4(macro_dec(VALUE))
+#define macro_less_eq6(VALUE) macro_less_eq5(macro_dec(VALUE))
+#define macro_less_eq7(VALUE) macro_less_eq6(macro_dec(VALUE))
+#define macro_less_eq8(VALUE) macro_less_eq7(macro_dec(VALUE))
+#define macro_less_eq9(VALUE) macro_less_eq8(macro_dec(VALUE))
+
+#define _macro_greater_eq0_m1(...) __VA_ARGS__ macro_consume
+#define _macro_greater_eq0_0(...) __VA_ARGS__ macro_consume
+#define _macro_greater_eq0_1(...) macro_expand
+#define _macro_greater_eq0_2(...) macro_expand
+#define _macro_greater_eq0_3(...) macro_expand
+#define _macro_greater_eq0_4(...) macro_expand
+#define _macro_greater_eq0_5(...) macro_expand
+#define _macro_greater_eq0_6(...) macro_expand
+#define _macro_greater_eq0_7(...) macro_expand
+#define _macro_greater_eq0_8(...) macro_expand
+#define _macro_greater_eq0_9(...) macro_expand
+
+#define _macro_greater_eq0(VALUE) macro_concat(_macro_greater_eq0_, VALUE)
+#define _macro_greater_eq1(VALUE) _macro_greater_eq0(macro_dec(VALUE))
+#define _macro_greater_eq2(VALUE) _macro_greater_eq1(macro_dec(VALUE))
+#define _macro_greater_eq3(VALUE) _macro_greater_eq2(macro_dec(VALUE))
+#define _macro_greater_eq4(VALUE) _macro_greater_eq3(macro_dec(VALUE))
+#define _macro_greater_eq5(VALUE) _macro_greater_eq4(macro_dec(VALUE))
+#define _macro_greater_eq6(VALUE) _macro_greater_eq5(macro_dec(VALUE))
+#define _macro_greater_eq7(VALUE) _macro_greater_eq6(macro_dec(VALUE))
+#define _macro_greater_eq8(VALUE) _macro_greater_eq7(macro_dec(VALUE))
+#define _macro_greater_eq9(VALUE) _macro_greater_eq8(macro_dec(VALUE))
 
 #define macro_atm1(...) macro_head(__VA_ARGS__)
 #define macro_at0(...) macro_head(__VA_ARGS__)
