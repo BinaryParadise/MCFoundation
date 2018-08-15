@@ -9,6 +9,7 @@
 @import XCTest;
 
 #import <MCFoundation/MCFoundation.h>
+#import "MCTestObject.h"
 
 @interface Tests : XCTestCase
 
@@ -256,6 +257,13 @@
     XCTAssert(macro_greater_eq(9, 7)(1)(0), "(9) is less than (7)");
     XCTAssert(macro_greater_eq(9, 8)(1)(0), "(9) is less than (8)");
     XCTAssert(macro_greater_eq(9, 9)(1)(0), "(9) is less than (9)");
+}
+
+- (void)testSafeProp {
+    MCTestObject *tObj = [MCTestObject new];
+    NSString *name = [tObj getPropName];
+    
+    XCTAssertTrue([name isEqualToString:@"pTitle"], @"不相等");
 }
 
 @end

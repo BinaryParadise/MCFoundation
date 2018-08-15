@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MCFoundation'
-  s.version          = '0.1.3'
+  s.version          = '0.2.0'
   s.summary          = '基础支持框架，提供一些公用功能支持.'
   s.description      = <<-DESC
 TODO:基础支持框架，提供一些公用功能支持

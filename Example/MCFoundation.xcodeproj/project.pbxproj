@@ -23,6 +23,8 @@
 		6D9225982D5DFFCD9E4EC298 /* libPods-MCFoundation_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C9EA6E3D424CCF60C35E51 /* libPods-MCFoundation_Example.a */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CEE148162123FED9000BB242 /* MCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE148152123FED9000BB242 /* MCTestObject.m */; };
+		CEE148172123FFAB000BB242 /* MCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE148152123FED9000BB242 /* MCTestObject.m */; };
 		D3CE63C3C59CD560EEA0B841 /* libPods-MCFoundation_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC99A665BDA51E9307E13022 /* libPods-MCFoundation_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		AC99A665BDA51E9307E13022 /* libPods-MCFoundation_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCFoundation_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD97AE7EBCCB1B70EAD33EE5 /* Pods-MCFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCFoundation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCFoundation_Example/Pods-MCFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C22BD8460269F555AC72B810 /* MCFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MCFoundation.podspec; path = ../MCFoundation.podspec; sourceTree = "<group>"; };
+		CEE148142123FED9000BB242 /* MCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTestObject.h; sourceTree = "<group>"; };
+		CEE148152123FED9000BB242 /* MCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				CEE148142123FED9000BB242 /* MCTestObject.h */,
+				CEE148152123FED9000BB242 /* MCTestObject.m */,
 			);
 			name = "Example for MCFoundation";
 			path = MCFoundation;
@@ -403,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE148162123FED9000BB242 /* MCTestObject.m in Sources */,
 				6003F59E195388D20070C39A /* MCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -413,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE148172123FFAB000BB242 /* MCTestObject.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
