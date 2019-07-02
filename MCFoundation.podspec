@@ -8,16 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MCFoundation'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '基础支持框架，提供一些公用功能支持.'
   s.description      = <<-DESC
 TODO:基础支持框架，提供一些公用功能支持
                        DESC
 
-  s.homepage         = 'https://github.com/MC-Studio/MCFoundation'
+  s.homepage         = 'https://github.com/BinaryParadise/MCFoundation'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mylcode' => 'mylcode.ali@gmail.com' }
-  s.source           = { :git => 'https://github.com/MC-Studio/MCFoundation.git', :tag => s.version.to_s }
+  s.author           = { 'Rake Yang' => 'fenglaijun@gmail.com' }
+  s.source           = { :git => 'https://github.com/BinaryParadise/MCFoundation.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'

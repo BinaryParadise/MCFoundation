@@ -1,6 +1,6 @@
 # MCFoundation
 
-[![Build Status](https://travis-ci.org/MC-Studio/MCFoundation.svg?branch=master)](https://travis-ci.org/MC-Studio/MCFoundation)
+[![Build Status](https://travis-ci.org/BinaryParadise/MCFoundation.svg?branch=master)](https://travis-ci.org/BinaryParadise/MCFoundation)
 [![Version](https://img.shields.io/cocoapods/v/MCFoundation.svg?style=flat)](http://cocoapods.org/pods/MCFoundation)
 [![License](https://img.shields.io/cocoapods/l/MCFoundation.svg?style=flat)](http://cocoapods.org/pods/MCFoundation)
 [![Platform](https://img.shields.io/cocoapods/p/MCFoundation.svg?style=flat)](http://cocoapods.org/pods/MCFoundation)
