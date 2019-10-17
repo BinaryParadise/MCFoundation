@@ -6,7 +6,13 @@
 //  Copyright © 2018 MC-Studio. All rights reserved.
 //
 
-#import "MCMacros.h"
+#import <MCFoundation/MCMacros.h>
+
+//! Project version number for MCFoundation.
+FOUNDATION_EXPORT double MCFoundationVersionNumber;
+
+//! Project version string for MCFoundation.
+FOUNDATION_EXPORT const unsigned char MCFoundationVersionString[];
 
 /**
  属性安全校验

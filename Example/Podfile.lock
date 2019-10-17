@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   MCFoundation:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  MCFoundation: d1d4eadd20f735f5037afac2fbb71267ee8d3917
+  MCFoundation: 340e10f603fc5a3ffe18f14173a9c8d1cdb62a78
 
-PODFILE CHECKSUM: 63b03b56cd3d863ff3a6f4c43838aa51dd5bd3ac
+PODFILE CHECKSUM: ec50a85d6f7759daf09473eea4dc53a20ebfb11d
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.4.0
